@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!--NAVBAR-->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="logo" href="#hero" aria-label="Go to Hero">VINCENT<span>.</span></a>
+
+        <nav>
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" 
+            aria-label="Open menu">☰</button>
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a class="btn -btn small" href="#contact">Hire Me</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--HERO SECTION-->
+    <section id="hero" class="hero section">
+      <div class="container hero grid">
+        <div class="hero-copy">
+          <p class="badge">Available for Freelance</p>
+          <h1>Hi, I'm Vincent Ramos - <br><span id="typing"></span></h1>
+          <p class="sub">I help business turn clicks into customer with modern,fast,and
+            conversion-focused web.</p>
+            <div class="cta-row">
+              <a href="#projects" class="btn">See My Work</a>
+              <button class="btn btn-outline" id="OpenPopup">Hire Me</button>
+            </div>
+            <div class="trust">
+              <span>Tech I use:</span>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+            <div class="hero-visual">
+              <div class="mockup-card">
+                <div class="mockup-screen">
+                  <div class="bar">
+                    <div class="lines"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES-->
+
+    <section id="services" class="services section">
+      <div class="services container">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section sub">End to end delivery from strategy to launch</p>
+          <div class="cards">
+            <article class="card reveal">
+              <h3>Web Development</h3>
+              <p>Responsive,SEO-friendly,and blazing fast sites using modern stacks</p>
+              <ul class="ticks">
+                <li>Next/React or PHP stack</li>
+                <li>Clean, scalable code</li>
+                <li>Best practices in web development</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <h3>Sales Funnel</h3>
+              <p>ClickFunnels-style funnels coded custom for higher control & speed</p>
+              <ul class="ticks">
+                <li>Landing ,Opt -in, Thank You</li>
+                <li>A/B test ready</li>
+                <li>High converting layout</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <h3>Automation</h3>
+              <p>Integrations that save time and increase efficiency</p>
+              <ul class="ticks">
+                <li>Email/WhatsApp flow</li>
+                <li>Payment gateway ready</li>
+                <li>Analytics tracking</li>
+              </ul>
+            </article>
+          </div>
+      </div>
+    </section>
+
+    <!--PROJECTS-->
+    <section id="projects" class=" project section">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="grid">
+          <a class="project-reveal" href="#" aria-label="Open projects">
+            <div class="thumb"></div>
+            <h4>Financial Funnel</h4>
+            <p>Lead-gen funnel with WA + autoresponder</p>
+          </a>
+
+          <a class="project-reveal" href="#" aria-label="Open projects">
+            <div class="thumb"></div>
+            <h4>Crypto Landing</h4>
+            <p>High converting launch page with countdown</p>
+          </a>
+
+          <a class="project-reveal" href="#" aria-label="Open projects">
+            <div class="thumb"></div>
+            <h4>Portfolio v2</h4>
+            <p>Personal brand site with blog & CMS</p>
+          </a>
+          <div class="center mt-24">
+            <button class="btn btn-outline">Start a project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT-->
+    <section id="about" class="about section">
+      <div class="container about-grid">
+        <div class="about-photo reveal"></div>
+        <div class="about-copy reveal">
+          <h2 class="section-title">About Me</h2>
+          <p>I'm a web developer & Funnel Builder focused on delivering high-quality digital solutions.</p>
+          <ul class="stats">
+            <li><strong>40+</strong>Pages Built</li>
+            <li><strong>5+</strong>Stacks</li>
+            <li><strong>2x</strong>Avg lift in leads</li>
+          </ul>
+          <a href="#contact" class="btn">Work With Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!--CONTACT popup form-->
+
+    <section id="contact" class="contact section">
+      <div class="container center">
+        <h2 class="section-title">Lets Build Something Great</h2>
+        <p>Tell me about your project goals and timeline</p>
+        <button class="btn" id="OpenPopup3">Open Contact Form</button>
+        <p class="mini">Prefer WhatsApp?</p>
+        <a class="wa" href="https://wa.me/1234567890" target="_blank" rel="noopener">Chat Here</a>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container footer grid"></div>
+      <p>© 2023 Your Company. All rights reserved.</p>
+      <div class="links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="mailto:info@yourcompany.com">hello@gmail.com</a>
+      </div>
+
+    </footer>
+
+    <!--CONTACT popup form box-->
+    <div class="popup" id="popup">
+      <div class="popup-content" role="dialog" aria-modal="true" arialabelledby="popupTitle">
+        <button class="close" id="closePopup" aria-label="Close popup">x</button>
+        <h3 id="popupTitle">Project Inquiry</h3>
+        <form id="inquiryForm" novalidate>
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your Name" required?/>
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="you@example.com" required/>
+          </div>
+          <div class="field">
+            <label>Project Details</label>
+            <textarea name="projectDetails" rows="4" placeholder="Tell us about your project" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-block">Send</button>
+          <p class="mini dim">No spam. I'll reply within 24-48 hours</p>
+        </form>
+      </div>
+    </div>
+
+    <!--Success Toast-->
+    <div class="toast" id="toast" role="status" aria-live="polite">Thanks! Your message has been sent.</div>
+    <script src="script.js"></script>
+  </body>
+  </html>
